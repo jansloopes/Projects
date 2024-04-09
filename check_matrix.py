@@ -45,8 +45,6 @@ def _calculate_number_of_dimensions(matrix: list) -> int:
         matrix = matrix[0]
     return dimensions
     
-add_matrix = [[]]
-dims = []
 
 def main():
     """
