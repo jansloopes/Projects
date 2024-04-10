@@ -53,7 +53,7 @@ def main():
     # Define the matrices
     the_matrix_1 = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
     the_matrix_2 = [[9, 8, 7], [6, 5, 4], [3, 2, 1]]
-    add_matrix = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+    add_matrix = the_matrix_1
     
     # Check if the matrices are of the same size
     if check_matrix(the_matrix_1, the_matrix_2):
@@ -70,11 +70,12 @@ def main():
                 q += 1
             q = 0
             p += 1
+             # Print the result
+        print("add_matrix is: {}".format(add_matrix))
     else:
         print("the matrices are not the same size")
     
-    # Print the result
-    print("add_matrix is: {}".format(add_matrix))
+   
 
 if __name__ == "__main__":
     main()
